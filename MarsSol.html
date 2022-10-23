@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mars Sol</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      #upper-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(
+          to right,
+          rgb(223, 245, 253),
+          rgb(252, 252, 232)
+        );
+        height: 130px;
+        margin-top: 2rem;
+      }
+      #date-section {
+        display: flex;
+      }
+      #date {
+        margin: 0;
+      }
+      #sol-input,
+      #page-input {
+        width: 15rem;
+      }
+
+      #image-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        margin: 2rem;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <div id="upper-container">
+      <input id="sol-input" value="" placeholder="Enter sol(max. 1000)" />
+      <input
+        id="page-input"
+        value=""
+        placeholder="Enter page number to display"
+      />
+      <button id="image-btn">Get Images</button>
+    </div>
+
+    <div id="image-container"></div>
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="Marssol.js"></script>
+  </body>
+</html>
